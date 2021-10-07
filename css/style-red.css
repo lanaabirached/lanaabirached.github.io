@@ -87,6 +87,12 @@ a:hover {
   background-position: center center;
 }
 
+@media only screen and (max-width: 600px) {
+    .bg-image {
+        background: #cccccc;
+    }
+}
+
 .overlay-mf {
   background-color: #be3131;
 }
