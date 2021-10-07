@@ -898,7 +898,7 @@ a:hover {
 }
 
 .card-blog .card-title {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-top: .6rem;
 }
 
@@ -1161,8 +1161,8 @@ footer .credits a {
 }
 
 .button-a {
-  background-color: #be3131;
-  color: #fff;
+  background-color: #fff;
+  color: #be3131;
   border-color: #f5dcdc;
 }
 
@@ -1172,7 +1172,7 @@ footer .credits a {
 }
 
 .button-rouded {
-  border-radius: 5rem;
+  border-radius: 2rem;
 }
 
 .btn-lg {
