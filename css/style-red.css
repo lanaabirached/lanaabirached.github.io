@@ -825,6 +825,12 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.w-icon {
+  font-size: 1.2rem;
+  color: #be3131;
+  float: right;
+}
+
 /*======================================
 //--//-->   TESTIMONIALS
 ======================================*/
