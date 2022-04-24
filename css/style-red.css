@@ -133,6 +133,12 @@ a:hover {
   padding-top: 4rem;
 }
 
+.sect-pt5 {
+  padding-top: 8rem;
+    padding-bottom: 8rem;
+
+}
+
 .sect-mt4 {
   margin-top: 4rem;
 }
@@ -1283,3 +1289,72 @@ footer .credits a {
     bottom: 15px;
   }
 }
+
+
+/* ADDED BY LANA */
+
+
+.rb-container {
+  width: 90%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.rb-container ul.rb {
+  margin: 2em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb li {
+  list-style: none;
+  margin: auto;
+  margin-left: 2em;
+  margin-right: 2em;
+  min-height: 50px;
+  border-left: 1px dashed #d4d4d4;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.rb-container ul.rb li:last-child {
+  border-left: 0;
+}
+
+.rb-container ul.rb li::before {
+  position: absolute;
+  left: -9.5px;
+  top: 0px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 1);
+  border-radius: 200%;
+  background: #be3131;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+  border-color: #f5dcdc;
+  transition: all 700ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+  color: #000;
+  position: relative;
+  width: 100px;
+  font-size: 12px;
+  margin-bottom: 1em;
+
+}
+
+.item-title {
+  color: #000;
+}
+
+
+
+
+
+
