@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Title</title>
+  <title>Projects</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -53,7 +53,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html#work">Work</a>
+            <a class="nav-link js-scroll" href="index.html#work">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="index.html#blog">Career</a>
@@ -76,15 +76,15 @@
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="intro-title mb-4">SETH</h2>
+          <h2 class="intro-title mb-4">LBI</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="index.html">Home</a>
             </li>
             <li class="breadcrumb-item">
-              <a href="index.html#work">Portfolio</a>
+              <a href="index.html#work">Projects</a>
             </li>
-            <li class="breadcrumb-item active">SETH</li>
+            <li class="breadcrumb-item active">LBI</li>
           </ol>
         </div>
       </div>
@@ -102,23 +102,23 @@
               <img src="img/kinba.jpg" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
-              <h1 class="article-title">Low-code Case managent system for Ericsson Legal</h1>
+              <h1 class="article-title">Loolia Brand Index (LBI) Project</h1>
               <ul>
                 <li>
                   <span class="ion-ios-person"></span>
-                  <a title="Position">Technical Consultant</a>
+                  <a title="Position">Software Engineer</a>
                 </li>
                 <li>
                   <span class="ion-ios-people" ></span>
-                  <a title="Individual or Group">Team of 6 developers</a>
+                  <a title="Individual or Group">Individual</a>
                 </li>
                 <li>
                   <span class="ion-ios-clock"></span>
-                  <a title="Length">7 months</a>
+                  <a title="Length">12 months</a>
                 </li>
                 <li>
                   <span class="ion-ios-briefcase"></span>
-                  <a title="Location">Appian</a>
+                  <a title="Location">Loolia</a>
                 </li>
                 
               </ul>
@@ -126,37 +126,60 @@
             <div class="article-content">
           
               <p><i>
-             Client project for Ericsson (This Project is live). Working in an AGILE framework with 2-week sprints concluded by a demo at the end of each cycle.
+Automating the process of calculating the Loolia Brand Index by building two independent applications, one of which is the main Loolia calculator while the other is a product entry application used to log product appearances on videos.
               </i></p>
               
                <h5>The Problem</h5>
               <p>
-                Talk a lot about intersection between tech and art as it relates to interest in UX 
+Loolia is an online platform and shop that aim on respectively promoting and selling various beauty products, notcably throught their Youtube channel that promotes multiple brands. The Loolia Brand Index (LBI) is a ranking system that quantifies the popularity of these brands. However, the process of calculating the LBI is currently manual, tedious, and time-consuming. Additionally, the current LBI calculation method does not account for retention rates, making it less precise.
 
               </p>
 
 <h5>The Solution</h5>
               <p>
-                A user friendly software which gives role-level access to case data and related entities. We developed a complex data structure as well as interfaces to transfer all the unstructured data into exploitable data structures. We digitised their business flow and worked hand-in-hand with several legal departments across multiple countries to consolidate the process. From the database in SQL Server all the way to UI supported by SAIL, our team built the application as well as infrastructure behind it. SSO log-in was also provided.
+The solution is to build two independent applications, one of which is the main Loolia calculator that will compute and display the LBI of all categories at multiple dates, and the other is a product entry application used by the production team to log product appearances on videos in order to source the necessary data to the main application. By automating the LBI calculation process, the project aims to save time, increase accuracy, and eliminate errors. The system also has provisions for future extensions and tuning of the index.
               </p>
 
+              Ultimately, this implementation helped take a manual process that would take over a week to a collective effort that requires a few clicks from each person. The wok is not only faster and more collaborative, it is also more accurate as the data is richer and in-real time. 
+
+
                <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p class="mb-0">a manual process that would take over a week to a collective effort that requires a few clicks.</p>
               </blockquote>
 
 <h5>My Responsabilities</h5>
               <p>
   
-                As a member of the team, I had to develop, design or review multiple aspects of this project. I have touched on all the aforementioned topics and particularly focused on user experience as I was appointed UX Lead. I early on developed reusable components for the whole team to use as well as keeping track of different UIs and their consistency. I also thought through the navigation, look and feel, branding and user interaction of the software. On the functional side, I developed features such as versioning of a form, multi-approval cycles or reports/charts backed by optimised queries. 
+As a software engineer, my responsibilities include developing both applications using Java and Java Swing UI. I am also responsible for designing the database and linking it to the applications using JDBC. I will ensure that both applications are properly integrated to communicate and exchange data seamlessly. Additionally, I will handle the project’s dependencies using Maven and Gradle for compilation, and ensure that the project’s folder and package architecture is well-structured.
               </p>
 
-<h5>                 Talk about challenges alongside screenshots 
+<h5>                 Challenges 
 </h5>
 
                <p>
   
-                Talk about challenges alongside screenshots 
+Challenge 1: Incorporating Retention Rates
+
+Another challenge is incorporating retention rates into the LBI calculation. Retention rates, in this context,  measure the percentage of users who continue to watch a product video over a specific period. Retention rates are important because they reflect which products were the most looked at, which is an essential factor in determining the long-term success of a product campaign. However, calculating retention rates can be difficult. On the one hand, getting this level of granularity in data require a special type of Youtube API to be set up to cater to security concerns as well as volumes of queries. On the other hand, incorporating retention rates into the LBI calculation significantly increases the complexity of the operations behind it. 
+
+Getting to know the Youtube API was a journey but likely the presentation and tools out there is quite rich. The biggest hurdle at this step was that Google changed their policies around API and privacy mid-way through the project which involved being forced to migrate to their API v3. 
+
+
+Moreover, I looked at the increase in computational complexity which impacts performance. Besides the normal code optimisation in Java and query optimisations in SQL, we hit the limit imposed by the lag of the API and the low specs of the machine the code is run on. Taking into consideration the low-frequency usage of this bit of the code as well as its ability to run off-peak times, it was not deemed necessary to invest more time in resolving a non-issue. 
+
               </p>
+
+               <p>
+               	Challenge 2: Encourage Adoption
+As the initial data entry and calculation was done by a single employee, it was not easy to convince other employee to participate. The new design requires video editors to enter the product included in the videos they produce as well as entering the timestamps at which they appear. Ultimately, the solution is to eliminate any friction between the user and the data entry. To this end, I tackled the problem with 2 things in mind: 
+Platform-Independence
+The project requires that the applications be platform-independent, which means that they must work seamlessly on all operating systems. Achieving platform-independence can be a challenge because different operating systems have different architectures, libraries, and dependencies. Ensuring that the application works smoothly on all operating systems may require significant development resources and extensive testing.
+
+User-Friendly Interface
+Finally, ensuring that the applications are user-friendly with a simple and intuitive user interface helped making the task easier and faster. The success of thius application depends on the ease of use and accessibility to the end-users. Developing a user-friendly interface requires a deep understanding of human-computer interaction, usability engineering, and design thinking. Therefore, designing an interface that is intuitive and easy to use can be a challenging task that requires a lot of creativity and expertise.
+
+               	              </p>
+
 
 
              
