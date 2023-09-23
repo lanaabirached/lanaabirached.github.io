@@ -251,6 +251,12 @@ a:hover {
   margin-bottom: 0;
 }
 
+ul, li, ol
+{
+margin: 3px;
+}
+
+
 .list-ico {
   line-height: 2;
 }
@@ -986,6 +992,8 @@ color: #000;
   border-left: 4px solid #be3131;
   padding: 18px;
   font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*------/ Comments /------*/
@@ -1025,6 +1033,21 @@ color: #000;
 
 .box-comments .comment-children {
   margin-left: 40px;
+}
+
+figure {
+  border: 0px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+figcaption {
+  color: gray;
+  font-style: italic;
+  font-size: small;
+  padding: 2px;
+  text-align: center;
 }
 
 /*------/ Sidebar /------*/

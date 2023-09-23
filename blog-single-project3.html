@@ -59,7 +59,7 @@
             <a class="nav-link js-scroll" href="index.html#blog">Career</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html#service">Interest</a>
+            <a class="nav-link js-scroll" href="index.html#service">Interests</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="index.html#contact">Contact</a>
@@ -99,7 +99,7 @@
         <div class="col-md-8">
           <div class="post-box">
             <div class="post-thumb">
-              <img src="img/kinba.jpg" class="img-fluid" alt="">
+              <img src="img/loolia_banner.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">Transforming the LBI from a week-long task into a two-click job.
@@ -127,22 +127,46 @@
             <div class="article-content">
           
               <p><i>
-Automating the process of calculating the Loolia Brand Index by building two independent applications, one of which is the main Loolia calculator while the other is a product entry application used to log product appearances on videos.
-              </i></p>
+                This project involves automating the calculation of the Loolia Brand Index (LBI), a manual and time-consuming process. This involves building two separate applications: the main Loolia calculator and a product entry application for logging product appearances in videos.              </i></p>
               
-               <h5>The Problem</h5>
-              <p>
-Loolia is an online platform and shop that aim on respectively promoting and selling various beauty products, notcably throught their Youtube channel that promotes multiple brands. The Loolia Brand Index (LBI) is a ranking system that quantifies the popularity of these brands. However, the process of calculating the LBI is currently manual, tedious, and time-consuming. Additionally, the current LBI calculation method does not account for retention rates, making it less precise.
-
-              </p>
+              
 
 <h5>The Solution</h5>
+<p>
+  The solution aims to save time, increase accuracy, and eliminate errors in the LBI calculation process. It also includes provisions for future extensions and adjustments to the index.
+</p>
+
+<p>
+  The implementation consists of two independent applications. The main Loolia calculator is the core component of your project. Its primary purpose is to compute and display the LBI (Loolia Brand Index) for all categories at multiple dates. 
+                </p>
+
+<div class="post-thumb">
+  <figure>
+    <img src="img/loolia_app1.png" class="img-fluid" alt="The main Loolia calculator">
+    <figcaption>App 1: The main Loolia calculator</figcaption>
+    </figure>
+</div>
+<p>
+</p>
+
+
               <p>
-The solution is to build two independent applications, one of which is the main Loolia calculator that will compute and display the LBI of all categories at multiple dates, and the other is a product entry application used by the production team to log product appearances on videos in order to source the necessary data to the main application. By automating the LBI calculation process, the project aims to save time, increase accuracy, and eliminate errors. The system also has provisions for future extensions and tuning of the index.
+ The other application is a data entry portal used by the production team to log product appearances on videos in order to source the necessary data to the main application.
               </p>
 
-              Ultimately, this implementation helped take a manual process that would take over a week to a collective effort that requires a few clicks from each person. The wok is not only faster and more collaborative, it is also more accurate as the data is richer and in-real time. 
+              <div class="post-thumb">
+                <figure>
+                  <img src="img/loolia_app2.png" class="img-fluid" alt="data entry portal used by the production team">
+                  <figcaption>App 2: Data entry portal used by the production team</figcaption>
+                  </figure>
+              </div>
+              <p>
+              </p>
+              <p>
 
+              Overall, these two applications work in tandem to streamline the LBI calculation process, making it more efficient, accurate, and adaptable to future changes. This automation not only saves time but also enhances the overall quality and reliability of the LBI rankings, ultimately benefiting Loolia's brand promotion and sales efforts.
+
+            </p>
 
                <blockquote class="blockquote">
                 <p class="mb-0">a manual process that would take over a week to a collective effort that requires a few clicks.</p>
@@ -151,38 +175,70 @@ The solution is to build two independent applications, one of which is the main 
 <h5>My Responsabilities</h5>
               <p>
   
-As a software engineer, my responsibilities include developing both applications using Java and Java Swing UI. I am also responsible for designing the database and linking it to the applications using JDBC. I will ensure that both applications are properly integrated to communicate and exchange data seamlessly. Additionally, I will handle the project’s dependencies using Maven and Gradle for compilation, and ensure that the project’s folder and package architecture is well-structured.
-              </p>
-
-<h5>                 Challenges 
-</h5>
-
-               <p>
-  
-Challenge 1: Incorporating Retention Rates
-
-Another challenge is incorporating retention rates into the LBI calculation. Retention rates, in this context,  measure the percentage of users who continue to watch a product video over a specific period. Retention rates are important because they reflect which products were the most looked at, which is an essential factor in determining the long-term success of a product campaign. However, calculating retention rates can be difficult. On the one hand, getting this level of granularity in data require a special type of Youtube API to be set up to cater to security concerns as well as volumes of queries. On the other hand, incorporating retention rates into the LBI calculation significantly increases the complexity of the operations behind it. 
-
-Getting to know the Youtube API was a journey but likely the presentation and tools out there is quite rich. The biggest hurdle at this step was that Google changed their policies around API and privacy mid-way through the project which involved being forced to migrate to their API v3. 
-
-
-Moreover, I looked at the increase in computational complexity which impacts performance. Besides the normal code optimisation in Java and query optimisations in SQL, we hit the limit imposed by the lag of the API and the low specs of the machine the code is run on. Taking into consideration the low-frequency usage of this bit of the code as well as its ability to run off-peak times, it was not deemed necessary to invest more time in resolving a non-issue. 
+                As a software engineer, my role encompasses the development of both applications using Java, and for the user interface, I'm leveraging Java Swing. I'm also responsible for the database design and its seamless integration into the applications via JDBC. Managing project dependencies using Maven and Gradle is part of my duties, and I'm ensuring the project's architecture is well-structured.
 
               </p>
 
+<h5>   Challenges </h5>
+
+<p>
+
+  I have encountered two significant challenges in this project:
+
+</p>
+
+
+<h6>1. Incorporating Retention Rates</h6>
+
                <p>
-               	Challenge 2: Encourage Adoption
-As the initial data entry and calculation was done by a single employee, it was not easy to convince other employee to participate. The new design requires video editors to enter the product included in the videos they produce as well as entering the timestamps at which they appear. Ultimately, the solution is to eliminate any friction between the user and the data entry. To this end, I tackled the problem with 2 things in mind: 
-Platform-Independence
-The project requires that the applications be platform-independent, which means that they must work seamlessly on all operating systems. Achieving platform-independence can be a challenge because different operating systems have different architectures, libraries, and dependencies. Ensuring that the application works smoothly on all operating systems may require significant development resources and extensive testing.
+                Incorporating retention rates into the Loolia Brand Index (LBI) calculation has proven to be a complex task. Retention rates measure the percentage of users who continue to watch a product video over a specific period, providing valuable insights into product popularity and long-term campaign success. However, several factors have made this challenge noteworthy:
 
-User-Friendly Interface
-Finally, ensuring that the applications are user-friendly with a simple and intuitive user interface helped making the task easier and faster. The success of thius application depends on the ease of use and accessibility to the end-users. Developing a user-friendly interface requires a deep understanding of human-computer interaction, usability engineering, and design thinking. Therefore, designing an interface that is intuitive and easy to use can be a challenging task that requires a lot of creativity and expertise.
+                <ul>
+                  <li> 
+                    <b>Specialized YouTube API</b>
 
-               	              </p>
+                    <br>To access the required level of granularity in retention rate data, a specialized YouTube API setup was necessary. This involved addressing security concerns and handling a high volume of queries.</br>
 
+                    Another major hurdle in this phase was Google's policy changes around API access and privacy, which required adapting to their API v3 mid-way through the project.
+                  </li>
+                  <li>
+                    <b>Complexity Increase</b> 
+                    <br>Incorporating retention rates significantly increased the complexity of the LBI calculation process. This complexity involved not only data retrieval but also intricate operations to integrate this data into the index.</br>
+                  </li>
+                  
+                  <Li>
+                    <b>Computational Demands</b> 
+                    <br>The increased computational complexity also had an impact on system performance. Despite code optimization in Java and query optimization in SQL, we encountered limitations due to the API's latency and the low specifications of the machine running the code. Considering the infrequent usage of this specific part of the code and its ability to run during off-peak times, we decided not to invest additional time in resolving a non-urgent issue.</br>
 
+                    </Li>
+                  </ul>
 
+              </p>
+
+    
+              </li>
+              <h6>2. Encourage Adoption</h6>
+
+              <p>
+                Convincing team members, particularly video editors, to actively participate in the data entry process presented a unique set of challenges. The new workflow required them to log product details and timestamps in the videos they produced. To address this challenge, I approached it with two key considerations:
+
+                <ul>
+                  <li>
+                    <b>Platform Independence</b> 
+                    <br>Ensuring that the applications are platform-independent, capable of seamless operation on all operating systems, was crucial. Different operating systems come with diverse architectures, libraries, and dependencies, making this a resource-intensive and testing-intensive aspect of the project.</br>
+                  </li>
+                  <li>
+                    <b>User-Friendly Interface</b> 
+                    <br>The success of the application hinged on creating a user-friendly interface that reduced friction in the data entry process. Achieving this required a deep understanding of human-computer interaction, usability engineering, and design thinking. Designing an intuitive and user-friendly interface demanded creativity and expertise in this area.</br>
+                  </li>
+                  
+                  </ul>
+                <p>
+                  These challenges, while demanding, have been essential in shaping the project's success. By addressing them effectively, we aim to streamline the LBI calculation process and foster greater user adoption, ultimately enhancing the project's overall impact.
+
+              </p>
+
+    
              
              
             </div>
